@@ -12,7 +12,7 @@ function BriefcaseIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export function Experience() {
-    const experiences = source.length
+    const experiences = (source.length
         ? source
         : [
             {
@@ -21,57 +21,59 @@ export function Experience() {
                 start: "Actualmente",
                 description:
                     "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-                highlights: ["Saber más →"],
             },
             {
                 company: "Adevinta Spain",
                 role: "Principal Frontend Engineer",
                 start: "Septiembre 2022",
-                end: "",
                 description:
-                    "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora del 30% en la entrega de software.",
+                    "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
             },
-        ];
-
-    const first = experiences[0];
-    const rest = experiences.slice(1);
+        ]) as typeof source;
 
     return (
         <Section id="experience" className="pt-8">
-            {/* Cabecera con icono */}
-            <header className="mb-8 flex items-center gap-3">
+            {/* Título con icono */}
+            <header className="mb-10 flex items-center gap-3">
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800/60 text-yellow-400 ring-1 ring-zinc-700">
                     <BriefcaseIcon className="h-4 w-4" />
                 </span>
-                <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Experiencia laboral</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-zinc-100">Experiencia laboral</h2>
             </header>
 
-            <div className="grid gap-12 md:grid-cols-2">
-                {/* Línea de tiempo a la izquierda */}
-                <ol className="relative border-l border-zinc-700/60 pl-6">
-                    {[first, ...rest].map((e, idx) => (
-                        <li key={`${e.company}-${e.role}-${idx}`} className="relative mb-10 last:mb-0">
-                            {/* Punto */}
-                            <span className="absolute -left-[9px] top-1 inline-block h-2.5 w-2.5 rounded-full bg-yellow-400" />
+            {/* Contenedor de la línea vertical continua */}
+            <div className="relative">
+                <div className="pointer-events-none absolute left-[11px] top-0 h-full w-px bg-zinc-700/60 md:left-[13px]" />
 
-                            <div className="flex flex-col gap-1">
-                                <p className="text-sm font-semibold text-yellow-400">{e.role}</p>
-                                <p className="text-sm font-medium text-zinc-100">{e.company}</p>
-                                <p className="text-xs text-zinc-400">{e.start}{e.end ? ` — ${e.end}` : ""}</p>
+                <ul className="space-y-12">
+                    {experiences.map((e, idx) => (
+                        <li key={`${e.company}-${e.role}-${idx}`} className="grid gap-10 md:grid-cols-2">
+                            {/* Columna izquierda con timeline */}
+                            <div className="relative pl-8 md:pl-10">
+                                {/* Punto */}
+                                <span className="absolute left-0 top-2 inline-block h-3 w-3 -translate-x-1/2 rounded-full bg-yellow-400" />
+
+                                <p className="text-base font-semibold text-yellow-400">{e.role}</p>
+                                <p className="text-lg font-semibold text-zinc-100">{e.company}</p>
+                                {e.start && (
+                                    <p className="mt-1 text-xs text-zinc-400">{e.start}{e.end ? ` — ${e.end}` : ""}</p>
+                                )}
+                            </div>
+
+                            {/* Columna derecha con descripción */}
+                            <div className="text-zinc-300 leading-7">
+                                <p>{e.description}</p>
+                                {idx === 0 && (
+                                    <div className="mt-3">
+                                        <a href="#projects" className="text-sm font-medium text-yellow-400 hover:underline underline-offset-4">
+                                            Saber más →
+                                        </a>
+                                    </div>
+                                )}
                             </div>
                         </li>
                     ))}
-                </ol>
-
-                {/* Descripción a la derecha */}
-                <div>
-                    <p className="text-sm leading-6 text-zinc-300">{first.description}</p>
-                    <div className="mt-4">
-                        <a href="#projects" className="text-sm font-medium text-yellow-400 hover:underline underline-offset-4">
-                            Saber más →
-                        </a>
-                    </div>
-                </div>
+                </ul>
             </div>
         </Section>
     );

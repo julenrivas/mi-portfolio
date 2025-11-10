@@ -11,7 +11,7 @@ type Props = {
 
 export function Section({ id, title, eyebrow, children, className = "" }: Props) {
     return (
-        <section id={id} className={`scroll-mt-20 py-12 sm:py-16 ${className}`}>
+        <section id={id} className={`py-12 sm:py-16 ${className}`}>
             <Container>
                 {(title || eyebrow) && (
                     <header className="mb-8">

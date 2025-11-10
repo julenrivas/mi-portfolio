@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
 
 export default function ContactPage() {
-    redirect("/#contact");
+    // The contact section was removed from the single-page layout.
+    // Redirect old /contact requests to the homepage.
+    redirect("/");
 }

@@ -7,12 +7,21 @@ const links = [
     { href: "#experience", label: "Experiencia" },
     { href: "#projects", label: "Proyectos" },
     { href: "#about", label: "Sobre mí" },
-    { href: "#contact", label: "Contacto" },
+    { href: "mailto:julenrivasplaza@gmail.com", label: "Contacto" },
 ];
 
 export function Navbar() {
+    const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        if (!href.startsWith("#")) return;
+        e.preventDefault();
+        const id = href.slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
     return (
-        <header className="sticky top-0 z-40 border-b border-zinc-200/60 bg-white/70 backdrop-blur dark:border-zinc-800 dark:bg-black/40">
+        <header className="sticky top-0 z-40 bg-transparent">
             <Container className="relative flex h-14 items-center justify-center">
                 {/* Nav centrado */}
                 <nav className="flex items-center gap-6 text-sm">
@@ -21,6 +30,7 @@ export function Navbar() {
                             key={href}
                             href={href}
                             scroll
+                            onClick={(e) => handleAnchorClick(e, href)}
                             className="text-zinc-500 transition-colors hover:text-yellow-400 dark:text-zinc-400 dark:hover:text-yellow-400"
                         >
                             {label}

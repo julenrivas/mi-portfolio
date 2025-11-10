@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components/cards/ProjectCard";
 
 export function Projects() {
     return (
-        <Section id="projects" title="Proyectos" eyebrow="Trabajo" className="bg-white dark:bg-black">
+        <Section id="projects" title="Proyectos" eyebrow="Trabajo">
             {projects.length === 0 ? (
                 <p className="text-sm text-zinc-600 dark:text-zinc-400">Aún no hay proyectos cargados.</p>
             ) : (

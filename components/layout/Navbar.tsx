@@ -31,7 +31,7 @@ export function Navbar() {
                             href={href}
                             scroll
                             onClick={(e) => handleAnchorClick(e, href)}
-                            className="text-zinc-500 transition-colors hover:text-yellow-400 dark:text-zinc-400 dark:hover:text-yellow-400"
+                            className="text-white/70 transition-colors hover:text-yellow-400"
                         >
                             {label}
                         </Link>

@@ -21,10 +21,10 @@ export function Projects() {
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800/60 text-yellow-400 ring-1 ring-zinc-700">
                         <ProjectsIcon className="h-4 w-4" />
                     </span>
-                    <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">Proyectos</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-white">Proyectos</h2>
                 </header>
                 {projects.length === 0 ? (
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">Aún no hay proyectos cargados.</p>
+                    <p className="text-sm text-white/80">Aún no hay proyectos cargados.</p>
                 ) : (
                     <div className="flex flex-col gap-8">
                         {projects.map((p) => (

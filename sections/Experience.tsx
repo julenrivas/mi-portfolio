@@ -38,7 +38,7 @@ export function Experience() {
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-zinc-800/60 text-yellow-400 ring-1 ring-zinc-700">
                     <BriefcaseIcon className="h-4 w-4" />
                 </span>
-                <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">Experiencia laboral</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-white">Experiencia laboral</h2>
             </header>
 
             {/* Contenedor de la línea vertical continuaa */}
@@ -56,12 +56,12 @@ export function Experience() {
                                 <p className="text-base font-semibold text-yellow-400">{e.role}</p>
                                 <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{e.company}</p>
                                 {e.start && (
-                                    <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{e.start}{e.end ? ` — ${e.end}` : ""}</p>
+                                    <p className="mt-1 text-xs text-white/90">{e.start}{e.end ? ` — ${e.end}` : ""}</p>
                                 )}
                             </div>
 
                             {/* Columna derecha con descripción */}
-                            <div className="text-zinc-700 dark:text-zinc-300 leading-7">
+                            <div className="text-white leading-7">
                                 <p>{e.description}</p>
                                 {idx === 0 && (
                                     <div className="mt-3">

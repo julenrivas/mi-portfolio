@@ -15,7 +15,7 @@ export function About() {
                 </header>
                 <div className="grid gap-10 md:grid-cols-3 md:items-start">
                     {/* Texto bio */}
-                    <div className="md:col-span-2 space-y-5 text-sm leading-relaxed text-zinc-300">
+                    <div className="md:col-span-2 space-y-5 text-sm leading-relaxed text-white">
                         <p>
                             Me llamo Julen y desde muy joven me apasiona la tecnología. Empecé curioseando cómo funcionaban los
                             sistemas y hoy aplico ese conocimiento para asegurar entornos estables y escalables.

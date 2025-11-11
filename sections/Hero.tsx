@@ -40,10 +40,10 @@ export function Hero() {
                             Disponible para trabajar
                         </span> */}
                     </div>
-                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white">
                         Hey, soy Julen
                     </h1>
-                    <p className="max-w-2xl text-lg text-zinc-700 dark:text-zinc-300">
+                    <p className="max-w-2xl text-lg text-white">
                         Un profesional en el campo de la informática con experiencia en <span className="font-semibold text-accent">sistemas distribuidos y control de procesos Batch</span>. Actualmente, me desempeño como Problems Management Analyst en Banco Santander Digital Services, asegurando el correcto funcionamiento de los procesos Batch a través de las herramientas de <span className="font-semibold text-accent">Control-M, AS400, BPM, iSeries</span>, entre otras.
 
                     </p>

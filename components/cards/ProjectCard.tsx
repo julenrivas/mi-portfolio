@@ -56,7 +56,7 @@ export function ProjectCard({ project }: { project: Project }) {
                             </ul>
                         )}
                         {description && (
-                            <p className="text-sm md:text-base leading-relaxed text-zinc-300 max-w-prose">
+                            <p className="text-sm md:text-base leading-relaxed text-white max-w-prose">
                                 {description}
                             </p>
                         )}
@@ -68,7 +68,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                     href={repoUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 ring-zinc-700 bg-zinc-900 text-zinc-200 hover:bg-white hover:text-zinc-900 transition-colors"
+                                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 ring-zinc-700 bg-zinc-900 text-white hover:bg-white hover:text-zinc-900 transition-colors"
                                 >
                                     <GitHubIcon className="h-4 w-4" />
                                     Code
@@ -79,7 +79,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                     href={demoUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 ring-zinc-700 bg-zinc-900 text-zinc-200 hover:bg-white hover:text-zinc-900 transition-colors"
+                                    className="inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 ring-zinc-700 bg-zinc-900 text-white hover:bg-white hover:text-zinc-900 transition-colors"
                                 >
                                     <ExternalIcon className="h-4 w-4" />
                                     Preview

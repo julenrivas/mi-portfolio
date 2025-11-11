@@ -9,7 +9,7 @@ export function SocialLinks({ className = "" }: { className?: string }) {
                         href={s.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 text-sm"
+                        className="text-white/70 hover:text-white text-sm"
                     >
                         {s.name}
                     </a>

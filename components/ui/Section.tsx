@@ -16,12 +16,12 @@ export function Section({ id, title, eyebrow, children, className = "" }: Props)
                 {(title || eyebrow) && (
                     <header className="mb-8">
                         {eyebrow && (
-                            <p className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 font-semibold mb-2">
+                            <p className="text-xs uppercase tracking-widest text-white/70 font-semibold mb-2">
                                 {eyebrow}
                             </p>
                         )}
                         {title && (
-                            <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+                            <h2 className="text-2xl font-bold tracking-tight text-white">
                                 {title}
                             </h2>
                         )}

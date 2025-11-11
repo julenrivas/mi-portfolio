@@ -11,7 +11,7 @@
   --muted: #94a3b8;
 }
 
-/* Tailwind v4 experimental @theme removido para evitar error; usamos variables CSS directas */
+/* Tailwind vv4 experimental @theme removido para evitar error; usamos variables CSS directas */
 
 /* Modo claro: cuando NO está la clase .dark en :root usamos paleta clara
    Esto permite que el botón de tema funcione independientemente de la

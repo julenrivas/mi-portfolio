@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# Portafolio de Julen Rivas
 
-First, run the development server:
+Sitio personal construido con Next.js (App Router), React y Tailwind CSS. Diseño oscuro, navegación por secciones y detalles visuales como timeline de experiencia, iconografía personalizada y tarjetas de proyectos en formato horizontal.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[Ver online →](https://julenrp.vercel.app/)
+
+</div>
+
+## ✨ Características
+
+- Single‑page con anclas: Home, Experiencia, Proyectos y Sobre mí
+- Tema oscuro por defecto con tipografía Onest
+- Timeline de experiencia con línea continua y marcadores
+- Iconos SVG personalizados (header de secciones, badges de tecnologías)
+- Tarjetas de proyectos en formato horizontal con hover sutil
+- SEO básico: metadata, sitemap y robots
+
+## 🧰 Stack técnico
+
+- Next.js 16 (App Router) + React 19
+- TypeScript 5
+- Tailwind CSS v4 (postcss) y utilidades personalizadas
+- next/image optimizado con calidades ajustadas
+
+## 📁 Estructura
+
+```
+app/           # Páginas y layout (App Router)
+components/    # Navbar, Footer, UI y cards
+sections/      # Hero, Experience, Projects, About
+lib/           # Datos mock y utilidades
+public/        # Imágenes y SVGs
+types/         # Tipos TypeScript
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧭 Configuración destacada
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/layout.tsx`: metadata, favicon, Open Graph/Twitter
+- `app/head.tsx`: enlaces de icono (con versionado para cache-busting)
+- `next.config.ts`: calidades de imagen (75, 85, 90, 92)
+- `app/globals.css`: variables de tema y fondo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖼️ Contenido
 
-## Learn More
+Edita `lib/data.ts` para actualizar proyectos y experiencia. Las imágenes van en `public/`.
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Despliegue
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Proyecto listo para Vercel. Tras la publicación, usa los validadores para refrescar tarjetas sociales si cambias el OG:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Meta (Facebook/WhatsApp) Sharing Debugger
+- LinkedIn Post Inspector
+- X/Twitter Card Validator
 
-## Deploy on Vercel
+## 📝 Licencia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT. Si te sirve, ¡me encantará tu ⭐ en el repo!

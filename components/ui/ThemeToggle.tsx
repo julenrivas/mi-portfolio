@@ -21,8 +21,13 @@ export function ThemeToggle() {
     // Efecto para sincronizar con DOM cuando cambia theme
     useEffect(() => {
         const root = document.documentElement;
-        if (theme === "dark") root.classList.add("dark");
-        else root.classList.remove("dark");
+        if (theme === "dark") {
+            root.classList.add("dark");
+        } else {
+            // Fuerza eliminación de la clase por si quedó en algún ancestor
+            root.classList.remove("dark");
+        }
+        root.dataset.theme = theme; // útil para depuración / estilos avanzados
         localStorage.setItem("theme", theme);
     }, [theme]);
 

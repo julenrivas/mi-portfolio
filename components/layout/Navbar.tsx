@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { ThemeToggle } from "../ui/ThemeToggle";
+// Theme toggle desactivado temporalmente
 
 const links = [
     { href: "#experience", label: "Experiencia" },
@@ -37,10 +37,7 @@ export function Navbar() {
                         </Link>
                     ))}
                 </nav>
-                {/* Toggle a la derecha */}
-                <div className="absolute right-0">
-                    <ThemeToggle />
-                </div>
+                {/* Toggle de tema oculto por ahora */}
             </Container>
         </header>
     );

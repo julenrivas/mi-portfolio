@@ -25,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
     const { title, description, tags, repoUrl, demoUrl, image } = project;
     return (
         <article className="group relative rounded-2xl border border-zinc-800 p-5 transition-all duration-300 hover:border-yellow-400/50 hover:shadow-[0_0_0_1px_rgba(250,204,21,0.3)] overflow-hidden bg-zinc-900/40">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-6 md:gap-10">
+            <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
                 {/* Columna imagen */}
                 <div className="relative w-full md:w-[500px] overflow-hidden rounded-xl md:shrink-0 h-56 md:h-64">
                     {image ? (
@@ -34,7 +34,7 @@ export function ProjectCard({ project }: { project: Project }) {
                             alt={title}
                             fill
                             sizes="(max-width: 768px) 100vw, 320px"
-                            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                            className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
                             quality={85}
                         />
                     ) : (

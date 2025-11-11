@@ -50,7 +50,7 @@ export function Hero() {
                     <div className="flex flex-wrap gap-3">
                         <a
                             href="mailto:julenrivasplaza@gmail.com"
-                            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm leading-none font-medium text-zinc-900 ring-1 ring-inset ring-zinc-200 hover:bg-zinc-100 transition-colors dark:text-zinc-200 dark:ring-zinc-600/60 dark:hover:bg-white dark:hover:text-zinc-900"
+                            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm leading-none font-medium text-white ring-1 ring-inset ring-zinc-600/60 hover:bg-white hover:text-zinc-900 transition-colors"
                         >
                             <MailIcon className="h-4 w-4" />
                             Contáctame
@@ -59,7 +59,7 @@ export function Hero() {
                             href="https://www.linkedin.com/in/julen-rivas-plaza/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm leading-none font-medium text-zinc-900 ring-1 ring-inset ring-zinc-200 hover:bg-zinc-100 transition-colors dark:text-zinc-200 dark:ring-zinc-600/60 dark:hover:bg-white dark:hover:text-zinc-900"
+                            className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm leading-none font-medium text-white ring-1 ring-inset ring-zinc-600/60 hover:bg-white hover:text-zinc-900 transition-colors"
                         >
                             <LinkedInIcon className="h-4 w-4" />
                             LinkedIn

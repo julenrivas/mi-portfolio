@@ -41,7 +41,7 @@ export function Experience() {
                 <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">Experiencia laboral</h2>
             </header>
 
-            {/* Contenedor de la línea vertical continua */}
+            {/* Contenedor de la línea vertical continuaa */}
             <div className="relative">
                 <div className="pointer-events-none absolute left-[11px] top-0 h-full w-px bg-zinc-700/60 md:left-[13px]" />
 

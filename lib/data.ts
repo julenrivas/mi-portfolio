@@ -6,6 +6,9 @@ import type { Experience, Project, SocialLink } from "@/types/portfolio";
 //     { name: "X", url: "https://x.com/tu-usuario" },
 // ];
 
+// Export vacío por defecto para evitar errores de compilación si el componente SocialLinks está presente
+export const socialLinks: SocialLink[] = [];
+
 export const projects: Project[] = [
     // Rellena con tus proyectos; este es un ejemplo de estructura
     // {

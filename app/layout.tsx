@@ -12,10 +12,11 @@ const onest = Onest({
 
 export const metadata: Metadata = {
   title: {
-    default: "Julen Rivas · Portafolio",
+    default: "Julen Rivas · Portfolio",
     template: "%s · Julen Rivas",
   },
-  description: "Portafolio Julen Rivas",
+  description:
+    "Portafolio de Julen Rivas. Problems Management Analyst especializado en procesos Batch (Control‑M, AS400, BPM, iSeries).",
   metadataBase: new URL("https://julenrp.vercel.app/"),
   icons: {
     icon: "/jr_logo.png?v=2",
@@ -24,11 +25,34 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Julen Rivas · Portafolio",
-    description: "Portafolio Julen Rivas",
+    description:
+      "Portafolio de Julen Rivas. Problems Management Analyst especializado en procesos Batch (Control‑M, AS400, BPM, iSeries).",
     url: "https://julenrp.vercel.app/",
     siteName: "Julen Rivas",
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/jr_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Logo JR — Julen Rivas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Julen Rivas · Portafolio",
+    description:
+      "Problems Management Analyst especializado en procesos Batch (Control‑M, AS400, BPM, iSeries). Experiencia, proyectos y contacto.",
+    images: [
+      {
+        url: "/jr_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Logo JR — Julen Rivas",
+      },
+    ],
   },
   robots: {
     index: true,

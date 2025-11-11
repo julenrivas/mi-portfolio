@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Julen Rivas · Portafolio",
     template: "%s · Julen Rivas",
   },
-  description: "Portafolio personal construido con Next.js",
+  description: "Portafolio Julen Rivas",
   metadataBase: new URL("https://julenrp.vercel.app/"),
   icons: {
     icon: "/jr_logo.png?v=2",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Julen Rivas · Portafolio",
-    description: "Portafolio personal construido con Next.js",
+    description: "Portafolio Julen Rivas",
     url: "https://julenrp.vercel.app/",
     siteName: "Julen Rivas",
     locale: "es_ES",

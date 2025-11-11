@@ -16,18 +16,18 @@ export function Experience() {
         ? source
         : [
             {
-                company: "Twitch",
-                role: "Creador de Contenido",
-                start: "Actualmente",
+                company: "Banco Santander Digital Services",
+                role: "Batch Support Incidents & Problems Management Analyst",
+                start: "Actualidad",
                 description:
-                    "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+                    "Responsable de la operación y continuidad de procesos batch críticos. Gestión y resolución de incidentes y problemas, coordinación con equipos de desarrollo y operaciones, y supervisión de ejecuciones mediante Control‑M, AS/400 y herramientas BPM. Enfoque en análisis de causa raíz, mitigación de impacto sobre SLA y prevención mediante automatización de runbooks y mejoras en los procedimientos de escalado.",
             },
             {
-                company: "Adevinta Spain",
-                role: "Principal Frontend Engineer",
-                start: "Septiembre 2022",
+                company: "MediaMarkt Iberia",
+                role: "Becario IT",
+                start: "Mayo 2022",
                 description:
-                    "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+                    "Soporte técnico interno y gestión de incidencias hardware y software. Responsable de la coordinación de reparaciones y gestión de piezas Apple a través de GSX, soporte de CPD y mantenimiento. Colaboración en la optimización de procesos y documentación de procedimientos para mejorar tiempos de respuesta y la calidad del servicio.",
             },
         ]) as typeof source;
 

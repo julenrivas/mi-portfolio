@@ -16,9 +16,9 @@ export const projects: Project[] = [
         description:
             "Sitio personal construido con Next.js, React y Tailwind CSS. Single-page con secciones, iconografía personalizada y tema oscuro.",
         tags: ["Next.js", "Tailwind CSS", "React"],
-        // repoUrl: "", // Opcional: añade aquí el enlace del repositorio cuando esté público
+        repoUrl: "https://github.com/julenrivas/mi-portfolio",
         demoUrl: "https://julenrp.vercel.app/",
-        image: "/screen_porfolio.png",
+        image: "/screen_portfolio.png",
     },
 ];
 

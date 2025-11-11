@@ -12,9 +12,9 @@ export const socialLinks: SocialLink[] = [];
 export const projects: Project[] = [
     {
         slug: "mi-portfolio",
-        title: "Portafolio personal",
+        title: "Portfolio personal",
         description:
-            "Sitio personal construido con Next.js, React y Tailwind CSS. Single-page con secciones, iconografía personalizada y tema oscuro.",
+            "Portafolio personal desarrollado con Next.js, React y Tailwind CSS. SPA responsive y accesible que incorpora tema oscuro, iconografía propia, microinteracciones y animaciones sutiles. Está optimizado para rendimiento y SEO, estructurado con componentes reutilizables y desplegado en Vercel; incluye enlaces al repositorio y a una demo en vivo.",
         tags: ["Next.js", "Tailwind CSS", "React"],
         repoUrl: "https://github.com/julenrivas/mi-portfolio",
         demoUrl: "https://julenrp.vercel.app/",

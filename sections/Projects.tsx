@@ -26,7 +26,7 @@ export function Projects() {
                 {projects.length === 0 ? (
                     <p className="text-sm text-zinc-600 dark:text-zinc-400">Aún no hay proyectos cargados.</p>
                 ) : (
-                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="flex flex-col gap-8">
                         {projects.map((p) => (
                             <ProjectCard key={p.slug} project={p} />
                         ))}

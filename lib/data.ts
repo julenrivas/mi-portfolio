@@ -10,16 +10,16 @@ import type { Experience, Project, SocialLink } from "@/types/portfolio";
 export const socialLinks: SocialLink[] = [];
 
 export const projects: Project[] = [
-    // Rellena con tus proyectos; este es un ejemplo de estructura
-    // {
-    //   slug: "mi-proyecto",
-    //   title: "Mi Proyecto",
-    //   description: "Descripción corta del proyecto",
-    //   tags: ["Next.js", "TailwindCSS"],
-    //   repoUrl: "https://github.com/tu-usuario/mi-proyecto",
-    //   demoUrl: "https://mi-proyecto.vercel.app",
-    //   image: "/projects/mi-proyecto.png",
-    // },
+    {
+        slug: "mi-portfolio",
+        title: "Portafolio personal",
+        description:
+            "Sitio personal construido con Next.js, React y Tailwind CSS. Single-page con secciones, iconografía personalizada y tema oscuro.",
+        tags: ["Next.js", "Tailwind CSS", "React"],
+        // repoUrl: "", // Opcional: añade aquí el enlace del repositorio cuando esté público
+        demoUrl: "https://julenrp.vercel.app/",
+        image: "/screen_porfolio.png",
+    },
 ];
 
 export const experiences: Experience[] = [

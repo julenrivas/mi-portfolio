@@ -14,7 +14,8 @@ export const projects: Project[] = [
         slug: "mi-portfolio",
         title: "Portfolio personal",
         description:
-            "Portafolio personal desarrollado con Next.js, React y Tailwind CSS. SPA responsive y accesible que incorpora tema oscuro, iconografía propia, microinteracciones y animaciones sutiles. Está optimizado para rendimiento y SEO, estructurado con componentes reutilizables y desplegado en Vercel; incluye enlaces al repositorio y a una demo en vivo.",
+            "Portafolio personal desarrollado con Next.js, React y Tailwind CSS. SPA responsive,microinteracciones y animaciones sutiles. Está optimizado y SEO, estructurado con componentes reutilizables y desplegado en Vercel.",
+
         tags: ["Next.js", "Tailwind CSS", "React"],
         repoUrl: "https://github.com/julenrivas/mi-portfolio",
         demoUrl: "https://julenrp.vercel.app/",

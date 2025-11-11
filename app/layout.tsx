@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   },
   description: "Portafolio personal construido con Next.js",
   metadataBase: new URL("https://julenrp.vercel.app/"),
+  icons: {
+    icon: "/jr_logo.png",
+    shortcut: "/jr_logo.png",
+    apple: "/jr_logo.png",
+  },
   openGraph: {
     title: "Julen Rivas · Portafolio",
     description: "Portafolio personal construido con Next.js",

@@ -12,16 +12,16 @@ const onest = Onest({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tu Nombre · Desarrollador Web",
-    template: "%s · Tu Nombre",
+    default: "Julen Rivas · Portafolio",
+    template: "%s · Julen Rivas",
   },
   description: "Portafolio personal construido con Next.js",
-  metadataBase: new URL("https://tu-dominio.com"),
+  metadataBase: new URL("https://julenrp.vercel.app/"),
   openGraph: {
-    title: "Tu Nombre · Desarrollador Web",
+    title: "Julen Rivas · Portafolio",
     description: "Portafolio personal construido con Next.js",
-    url: "https://tu-dominio.com",
-    siteName: "Tu Nombre",
+    url: "https://julenrp.vercel.app/",
+    siteName: "Julen Rivas",
     locale: "es_ES",
     type: "website",
   },

@@ -1,10 +1,10 @@
 import type { Experience, Project, SocialLink } from "@/types/portfolio";
 
-export const socialLinks: SocialLink[] = [
-    { name: "GitHub", url: "https://github.com/tu-usuario" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/tu-usuario" },
-    { name: "X", url: "https://x.com/tu-usuario" },
-];
+// export const socialLinks: SocialLink[] = [
+//     { name: "GitHub", url: "https://github.com/tu-usuario" },
+//     { name: "LinkedIn", url: "https://www.linkedin.com/in/tu-usuario" },
+//     { name: "X", url: "https://x.com/tu-usuario" },
+// ];
 
 export const projects: Project[] = [
     // Rellena con tus proyectos; este es un ejemplo de estructura

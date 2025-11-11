@@ -7,7 +7,7 @@ type Props = {
 
 export function SectionHeading({ children, className = "" }: Props) {
     return (
-        <h3 className={`text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 ${className}`}>
+        <h3 className={`text-xl font-semibold tracking-tight text-white ${className}`}>
             {children}
         </h3>
     );

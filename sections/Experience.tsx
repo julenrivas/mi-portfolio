@@ -54,7 +54,7 @@ export function Experience() {
                                 <span className="absolute left-0 top-2 inline-block h-3 w-3 -translate-x-1/2 rounded-full bg-yellow-400" />
 
                                 <p className="text-base font-semibold text-yellow-400">{e.role}</p>
-                                <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{e.company}</p>
+                                <p className="text-lg font-semibold text-white">{e.company}</p>
                                 {e.start && (
                                     <p className="mt-1 text-xs text-white/90">{e.start}{e.end ? ` — ${e.end}` : ""}</p>
                                 )}
